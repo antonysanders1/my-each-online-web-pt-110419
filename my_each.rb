@@ -2,8 +2,11 @@ def my_each(words)
   # code here
   
   counter = 0 
+  new_array =[]
+  
   while counter < words.length do
-    yield words[counter]
+    
+    new_array << yield words[counter]
     counter = counter + 1
   end
   words
